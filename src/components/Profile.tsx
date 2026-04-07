@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, Code, Coffee, Trophy, Github, Twitter, Mail } from 'lucide-react';
+import { User, Code, Coffee, Trophy, Github, Twitter } from 'lucide-react';
 
 const Profile = () => {
     return (
@@ -26,13 +26,12 @@ const Profile = () => {
                             <div className="flex space-x-4">
                                 <SocialLink href="https://github.com/EastSource" icon={<Github size={20} />} label="GitHub" />
                                 <SocialLink href="https://twitter.com" icon={<Twitter size={20} />} label="Twitter" />
-                                <SocialLink href="mailto:hello@example.com" icon={<Mail size={20} />} label="Email" />
                             </div>
                         </div>
 
                         {/* Stats */}
                         <div className="grid grid-cols-3 gap-4">
-                            <StatCard icon={<Code size={24} />} value="3+" label="Years Exp" />
+                            <StatCard icon={<Code size={24} />} value="2+" label="Years Exp" />
                             <StatCard icon={<Trophy size={24} />} value="5" label="Games Shipped" />
                             <StatCard icon={<Coffee size={24} />} value="∞" label="Coffee" />
                         </div>
@@ -46,11 +45,6 @@ const Profile = () => {
                                 <User size={120} className="text-secondary" />
                                 {/* Replace with actual image later */}
                                 {/* <img src="/path/to/avatar.jpg" alt="Profile" className="w-full h-full object-cover" /> */}
-                            </div>
-
-                            {/* Floating Badge */}
-                            <div className="absolute -bottom-4 right-0 bg-accent text-background px-6 py-2 rounded-full font-bold shadow-lg shadow-accent/20">
-                                Lvl. 25
                             </div>
                         </div>
                     </div>

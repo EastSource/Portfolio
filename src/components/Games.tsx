@@ -23,18 +23,20 @@ const Games = () => {
             buttonText: "Download and Play Demo"
         },
         {
+            title: "SEARCHING",
+            genre: "Action",
+            image: "/games/SEARCHING.png",
+            tags: ["Unity", "WebGL"],
+            downloadUrl: "/games/SEARCHING.zip",
+            buttonText: "Download and Play Demo"
+        },
+        {
             title: "HuntingAction2D",
             genre: "2D Action",
             image: "/games/HuntingAction2D/HuntingAction2D.png",
-            tags: ["Unity", "WebGL"],
+            tags: ["Unity", "WebGL", "The Work for learning"],
             playUrl: "/games/HuntingAction2D/index.html",
             buttonText: "Play Now"
-        },
-        {
-            title: "Neon Runner 2077",
-            genre: "Action Platformer",
-            image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-            tags: ["Unity", "C#", "HDRP"]
         }
     ];
 

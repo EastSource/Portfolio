@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import Profile from './components/Profile';
 import Skills from './components/Skills';
 import Games from './components/Games';
-import Vision from './components/Vision';
 import Footer from './components/Footer';
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
         <Profile />
         <Skills />
         <Games />
-        <Vision />
       </main>
       <Footer />
     </div>

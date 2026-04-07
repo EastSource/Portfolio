@@ -6,17 +6,17 @@ const Skills = () => {
         {
             title: "Game Dev",
             icon: <Gamepad className="text-accent" size={32} />,
-            skills: ["Unity", "C#", "Blender"]
+            skills: ["Unity", "Blender"]
         },
         {
             title: "Tools",
             icon: <PenTool className="text-accent" size={32} />,
-            skills: ["Rider", "After Effects", "Illustrator", "Figma", "Git", "Cubase"]
+            skills: ["Rider", "Git", "Cubase"]
         },
         {
             title: "Learning",
             icon: <BookOpen className="text-accent" size={32} />,
-            skills: ["C/C++", "HLSL", "GameSynth", "Wwise"]
+            skills: ["Unreal Engine", "C/C++", "GameSynth", "Wwise", "After Effects"]
         }
     ];
 
