@@ -32,8 +32,8 @@ const Profile = () => {
                         {/* Stats */}
                         <div className="grid grid-cols-3 gap-4">
                             <StatCard icon={<Code size={24} />} value="2+" label="Years Exp" />
-                            <StatCard icon={<Trophy size={24} />} value="5" label="Games Shipped" />
-                            <StatCard icon={<Coffee size={24} />} value="∞" label="Coffee" />
+                            <StatCard icon={<Trophy size={24} />} value="4" label="Games Shipped" />
+                            <StatCard icon={<Coffee size={24} />} value="∞" label="Caffeine" />
                         </div>
                     </div>
 

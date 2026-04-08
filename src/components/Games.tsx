@@ -26,7 +26,7 @@ const Games = () => {
             title: "SEARCHING",
             genre: "Action",
             image: "/games/SEARCHING.png",
-            tags: ["Unity", "WebGL"],
+            tags: ["Unity", "Wwise", "C#"],
             downloadUrl: "/games/SEARCHING.zip",
             buttonText: "Download and Play Demo"
         },
@@ -34,7 +34,7 @@ const Games = () => {
             title: "HuntingAction2D",
             genre: "2D Action",
             image: "/games/HuntingAction2D/HuntingAction2D.png",
-            tags: ["Unity", "WebGL", "The Work for learning"],
+            tags: ["Unity", "WebGL", "C#", "The Work for learning"],
             playUrl: "/games/HuntingAction2D/index.html",
             buttonText: "Play Now"
         }
