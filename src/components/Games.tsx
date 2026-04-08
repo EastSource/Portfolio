@@ -17,25 +17,25 @@ const Games = () => {
         {
             title: "Magic Dragon Adventure",
             genre: "Action Adventure",
-            image: "/games/MagicDragonAdventure.png",
+            image: `${import.meta.env.BASE_URL}games/MagicDragonAdventure.png`,
             tags: ["Unity", "C#"],
-            downloadUrl: "/games/MagicDragonAdventure.zip",
+            downloadUrl: `${import.meta.env.BASE_URL}games/MagicDragonAdventure.zip`,
             buttonText: "Download and Play Demo"
         },
         {
             title: "SEARCHING",
             genre: "Action",
-            image: "/games/SEARCHING.png",
+            image: `${import.meta.env.BASE_URL}games/SEARCHING.png`,
             tags: ["Unity", "Wwise", "C#"],
-            downloadUrl: "/games/SEARCHING.zip",
+            downloadUrl: `${import.meta.env.BASE_URL}games/SEARCHING.zip`,
             buttonText: "Download and Play Demo"
         },
         {
             title: "HuntingAction2D",
             genre: "2D Action",
-            image: "/games/HuntingAction2D/HuntingAction2D.png",
+            image: `${import.meta.env.BASE_URL}games/HuntingAction2D/HuntingAction2D.png`,
             tags: ["Unity", "WebGL", "C#", "The Work for learning"],
-            playUrl: "/games/HuntingAction2D/index.html",
+            playUrl: `${import.meta.env.BASE_URL}games/HuntingAction2D/index.html`,
             buttonText: "Play Now"
         }
     ];
