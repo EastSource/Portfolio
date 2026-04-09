@@ -35,7 +35,7 @@ const Games = () => {
             genre: "2D Action",
             image: `${import.meta.env.BASE_URL}games/HuntingAction2D.webp`,
             tags: ["Unity", "WebGL", "C#", "The Work for learning"],
-            playUrl: `${import.meta.env.BASE_URL}games/HuntingAction2D/index.html`,
+            playUrl: `${import.meta.env.BASE_URL}games/HuningAction2D/index.html`,
             buttonText: "Play Now"
         }
     ];
