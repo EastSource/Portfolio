@@ -114,7 +114,7 @@ const Games = () => {
             {/* Game Modal */}
             {activeGame && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4 md:p-8">
-                    <div className="relative w-full h-full max-w-7xl max-h-[80vh] flex flex-col bg-black border border-white/10 rounded-2xl overflow-hidden shadow-2xl">
+                    <div className="relative w-full h-full max-w-[95vw] max-h-[90vh] flex flex-col bg-black border border-white/10 rounded-2xl overflow-hidden shadow-2xl">
                         {/* Header */}
                         <div className="flex justify-between items-center p-4 bg-white/5 border-b border-white/10">
                             <h3 className="text-white font-bold">Playing Game</h3>
