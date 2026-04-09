@@ -16,14 +16,8 @@ const Profile = () => {
                     {/* Bio Section */}
                     <div className="space-y-8">
                         <div className="bg-white/5 border border-white/10 p-8 rounded-lg">
-                            <h3 className="text-2xl font-bold mb-6 text-white">Hello, World!</h3>
-                            <p className="text-secondary leading-relaxed mb-6">
-                                デジタルな世界に「楽しさ」と「驚き」を実装するクリエイターです。<br />
-                                UI/UXデザインとゲーム開発に情熱を注ぎ、ユーザーの心を動かす体験を作り出すことを目指しています。
-                                技術とデザインの架け橋となり、新しい価値を創造します。
-                            </p>
 
-                            <div className="flex space-x-4">
+                            <div className="flex justify-center space-x-16">
                                 <SocialLink href="https://github.com/EastSource" icon={<Github size={20} />} label="GitHub" />
                                 <SocialLink href="https://twitter.com" icon={<Twitter size={20} />} label="Twitter" />
                             </div>

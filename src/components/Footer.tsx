@@ -10,7 +10,7 @@ const Footer = () => {
                 </div>
 
                 <div className="text-secondary text-sm flex items-center gap-1">
-                    Made with <Heart size={14} className="text-accent fill-accent" /> by EastSource Dev © {new Date().getFullYear()}
+                    Created by EastSource Dev using Gemini AI {new Date().getFullYear()}
                 </div>
 
                 <div className="flex gap-6">
