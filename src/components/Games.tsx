@@ -18,7 +18,7 @@ const Games = () => {
             title: "Magic Dragon Adventure",
             genre: "Action Adventure",
             image: `${import.meta.env.BASE_URL}games/MagicDragonAdventure.webp`,
-            tags: ["Unity", "C#"],
+            tags: ["Unity", "C#", "2025"],
             downloadUrl: `https://drive.google.com/drive/folders/1K_SyxiH1gvEE3XBdIsW9PoCj0qVlvfBi?usp=sharing`,
             buttonText: "Download and Play Demo"
         },
@@ -26,7 +26,7 @@ const Games = () => {
             title: "SEARCHING",
             genre: "Action",
             image: `${import.meta.env.BASE_URL}games/SEARCHING.webp`,
-            tags: ["Unity", "Wwise", "C#"],
+            tags: ["Unity", "Wwise", "C#", "2026"],
             downloadUrl: `https://drive.google.com/drive/folders/1K_SyxiH1gvEE3XBdIsW9PoCj0qVlvfBi?usp=sharing`,
             buttonText: "Download and Play Demo"
         },
@@ -34,7 +34,7 @@ const Games = () => {
             title: "HuntingAction2D",
             genre: "2D Action",
             image: `${import.meta.env.BASE_URL}games/HuntingAction2D.webp`,
-            tags: ["Unity", "WebGL", "C#", "The Work for learning"],
+            tags: ["Unity", "WebGL", "C#", "The Work for learning", "2024"],
             playUrl: `${import.meta.env.BASE_URL}games/HuningAction2D/index.html`,
             buttonText: "Play Now"
         }
