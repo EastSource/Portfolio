@@ -19,7 +19,7 @@ const Games = () => {
             genre: "Action Adventure",
             image: `${import.meta.env.BASE_URL}games/MagicDragonAdventure.webp`,
             tags: ["Unity", "C#"],
-            downloadUrl: `${import.meta.env.BASE_URL}games/MagicDragonAdventure.zip`,
+            downloadUrl: `https://drive.google.com/drive/folders/1K_SyxiH1gvEE3XBdIsW9PoCj0qVlvfBi?usp=sharing`,
             buttonText: "Download and Play Demo"
         },
         {
@@ -27,7 +27,7 @@ const Games = () => {
             genre: "Action",
             image: `${import.meta.env.BASE_URL}games/SEARCHING.webp`,
             tags: ["Unity", "Wwise", "C#"],
-            downloadUrl: `${import.meta.env.BASE_URL}games/SEARCHING.zip`,
+            downloadUrl: `https://drive.google.com/drive/folders/1K_SyxiH1gvEE3XBdIsW9PoCj0qVlvfBi?usp=sharing`,
             buttonText: "Download and Play Demo"
         },
         {
@@ -80,7 +80,6 @@ const Games = () => {
                                     {game.downloadUrl ? (
                                         <a
                                             href={game.downloadUrl}
-                                            download={game.downloadUrl.split('/').pop()}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="flex items-center gap-2 text-white font-medium hover:text-accent transition-colors"
