@@ -42,7 +42,7 @@ const Games = () => {
 
     return (
         <section id="games" className="py-20 bg-background relative">
-            <div className="container mx-auto px-6">
+            <div className="w-full max-w-[1600px] mx-auto px-6 md:px-12 lg:px-24">
                 <div className="flex flex-col items-center mb-16">
                     <h2 className="text-4xl font-bold mb-4 flex items-center gap-2">
                         <span className="text-accent">#</span> Games
@@ -50,62 +50,64 @@ const Games = () => {
                     <div className="w-20 h-1 bg-accent"></div>
                 </div>
 
-                <div className="flex flex-col gap-12 max-w-4xl mx-auto">
+                <div className="flex flex-col gap-16 w-full mx-auto">
                     {games.map((game, index) => (
-                        <div key={index} className="group relative rounded-xl overflow-hidden cursor-pointer">
-                            {/* Image */}
-                            <div className="aspect-video w-full overflow-hidden">
-                                <img
-                                    src={game.image}
-                                    alt={game.title}
-                                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                                />
-                            </div>
+                        <div key={index} className={`flex flex-col md:flex-row items-stretch bg-white/5 rounded-3xl border border-white/10 overflow-hidden hover:border-accent/50 transition-colors duration-300 shadow-2xl ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
+                            
+                            {/* Content Side */}
+                            <div className="flex-1 py-6 px-8 md:py-6 md:px-10 lg:py-8 lg:px-16 flex flex-col justify-center">
+                                <div className="text-accent text-sm md:text-base font-bold uppercase tracking-wider mb-2">{game.genre}</div>
+                                <h3 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-3 leading-tight">{game.title}</h3>
+                                <div className="flex flex-wrap gap-2 mb-5">
+                                    {game.tags.map(tag => (
+                                        <span key={tag} className="text-sm md:text-base text-gray-300 bg-white/10 px-4 py-1.5 rounded-full font-medium">
+                                            {tag}
+                                        </span>
+                                    ))}
+                                </div>
 
-                            {/* Overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent flex flex-col justify-end p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                <div className="transform transition-transform duration-300 delay-75">
-                                    <div className="text-accent text-sm font-bold uppercase tracking-wider mb-2">{game.genre}</div>
-                                    <h3 className="text-2xl font-bold text-white mb-2">{game.title}</h3>
-                                    <div className="flex flex-wrap gap-2 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
-                                        {game.tags.map(tag => (
-                                            <span key={tag} className="text-xs text-gray-300 bg-white/10 px-2 py-1 rounded">
-                                                {tag}
-                                            </span>
-                                        ))}
-                                    </div>
-
-                                    {/* Link/Button */}
+                                {/* Link/Button */}
+                                <div>
                                     {/* @ts-ignore - dynamic check */}
                                     {game.downloadUrl ? (
                                         <a
                                             href={game.downloadUrl}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="flex items-center gap-2 text-white font-medium hover:text-accent transition-colors"
+                                            className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-background text-base md:text-lg font-bold rounded-xl hover:bg-white transition-colors"
                                         >
-                                            <Play size={16} fill="currentColor" /> {game.buttonText}
+                                            <Play size={20} fill="currentColor" /> {game.buttonText}
                                         </a>
                                     ) : (
                                         // @ts-ignore
                                         game.playUrl ? (
                                             <button
                                                 onClick={() => setActiveGame(game.playUrl)}
-                                                className="flex items-center gap-2 text-white font-medium hover:text-accent transition-colors"
+                                                className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-background text-base md:text-lg font-bold rounded-xl hover:bg-white transition-colors"
                                             >
-                                                <Play size={16} fill="currentColor" /> {game.buttonText}
+                                                <Play size={20} fill="currentColor" /> {game.buttonText}
                                             </button>
                                         ) : (
-                                            <button className="flex items-center gap-2 text-white font-medium hover:text-accent transition-colors">
-                                                <Play size={16} fill="currentColor" /> Play Demo
+                                            <button className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-background text-base md:text-lg font-bold rounded-xl hover:bg-white transition-colors">
+                                                <Play size={20} fill="currentColor" /> Play Demo
                                             </button>
                                         )
                                     )}
                                 </div>
                             </div>
 
-                            {/* Border glow effect on hover */}
-                            <div className="absolute inset-0 border-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-xl"></div>
+                            {/* Image Side */}
+                            <div className="flex-1 relative group overflow-hidden">
+                                <div className="aspect-video md:aspect-auto md:h-full w-full min-h-[200px] md:min-h-[280px]">
+                                    <img
+                                        src={game.image}
+                                        alt={game.title}
+                                        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                                    />
+                                </div>
+                                <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 pointer-events-none"></div>
+                            </div>
+
                         </div>
                     ))}
                 </div>
