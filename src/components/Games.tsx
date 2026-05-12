@@ -50,7 +50,7 @@ const Games = () => {
                     <div className="w-20 h-1 bg-accent"></div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="flex flex-col gap-12 max-w-4xl mx-auto">
                     {games.map((game, index) => (
                         <div key={index} className="group relative rounded-xl overflow-hidden cursor-pointer">
                             {/* Image */}
