@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Gamepad2 } from 'lucide-react';
+import { ArrowRight, Gamepad2, Music } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
@@ -28,7 +28,7 @@ const Hero = () => {
                         EASTSOURCE DEV
                     </h1>
                     <p className="text-xl md:text-2xl text-secondary mb-10 tracking-widest font-light">
-                        GAME CREATOR
+                        ENJOYING CREATIVITY
                     </p>
 
                     <div className="flex flex-col md:flex-row justify-center gap-6">
@@ -38,6 +38,15 @@ const Hero = () => {
                         >
                             <Gamepad2 size={20} />
                             View Games
+                            <div className="absolute inset-0 border-2 border-accent transform translate-x-1 translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-300 pointer-events-none"></div>
+                        </a>
+
+                        <a
+                            href="#musics"
+                            className="group relative px-8 py-3 bg-accent text-background font-bold uppercase tracking-widest hover:bg-white transition-colors duration-300 flex items-center justify-center gap-2"
+                        >
+                            <Music size={20} />
+                            Listen Music
                             <div className="absolute inset-0 border-2 border-accent transform translate-x-1 translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-300 pointer-events-none"></div>
                         </a>
 

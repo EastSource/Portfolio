@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { ExternalLink, Play, X, Maximize } from 'lucide-react';
+import { ExternalLink, Play, X, Maximize, Github } from 'lucide-react';
 
 const Games = () => {
     const [activeGame, setActiveGame] = useState<string | null>(null);
@@ -28,6 +28,7 @@ const Games = () => {
             image: `${import.meta.env.BASE_URL}games/SEARCHING.webp`,
             tags: ["Unity", "Wwise", "C#", "2026"],
             downloadUrl: `https://drive.google.com/drive/folders/1K_SyxiH1gvEE3XBdIsW9PoCj0qVlvfBi?usp=sharing`,
+            githubUrl: `https://github.com/EastSource/SEARCHING`,
             buttonText: "Download and Play Demo"
         },
         {
@@ -36,6 +37,7 @@ const Games = () => {
             image: `${import.meta.env.BASE_URL}games/HuntingAction2D.webp`,
             tags: ["Unity", "WebGL", "C#", "The Work for learning", "2024"],
             playUrl: `${import.meta.env.BASE_URL}games/HuningAction2D/index.html`,
+            githubUrl: `https://github.com/EastSource/HuntingAction2D`,
             buttonText: "Play Now"
         }
     ];
@@ -67,7 +69,7 @@ const Games = () => {
                                 </div>
 
                                 {/* Link/Button */}
-                                <div>
+                                <div className="flex items-center gap-4">
                                     {/* @ts-ignore - dynamic check */}
                                     {game.downloadUrl ? (
                                         <a
@@ -92,6 +94,19 @@ const Games = () => {
                                                 <Play size={20} fill="currentColor" /> Play Demo
                                             </button>
                                         )
+                                    )}
+
+                                    {/* @ts-ignore - dynamic check */}
+                                    {game.githubUrl && (
+                                        <a
+                                            href={game.githubUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-white hover:text-accent transition-colors p-3 bg-white/10 rounded-xl hover:bg-white/20 flex items-center justify-center"
+                                            onClick={(e) => e.stopPropagation()}
+                                        >
+                                            <Github size={24} />
+                                        </a>
                                     )}
                                 </div>
                             </div>
