@@ -39,6 +39,15 @@ const Games = () => {
             playUrl: `${import.meta.env.BASE_URL}games/HuningAction2D/index.html`,
             githubUrl: `https://github.com/EastSource/HuntingAction2D`,
             buttonText: "Play Now"
+        },
+        {
+            title: "QFrameworkTrick",
+            genre: "2D Action",
+            image: `${import.meta.env.BASE_URL}games/QFrameworkTrick.webp`,
+            tags: ["Unity", "C#", "QFramework", "The Work for learning", "2025"],
+            downloadUrl: `https://github.com/EastSource/QFlameWorkTrick`,
+            githubUrl: `https://github.com/EastSource/QFlameWorkTrick`,
+            buttonText: "View on GitHub"
         }
     ];
 
@@ -55,7 +64,7 @@ const Games = () => {
                 <div className="flex flex-col gap-16 w-full mx-auto">
                     {games.map((game, index) => (
                         <div key={index} className={`flex flex-col md:flex-row items-stretch bg-white/5 rounded-3xl border border-white/10 overflow-hidden hover:border-accent/50 transition-colors duration-300 shadow-2xl ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
-                            
+
                             {/* Content Side */}
                             <div className="flex-1 py-6 px-8 md:py-6 md:px-10 lg:py-8 lg:px-16 flex flex-col justify-center">
                                 <div className="text-accent text-sm md:text-base font-bold uppercase tracking-wider mb-2">{game.genre}</div>
