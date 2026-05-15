@@ -55,17 +55,30 @@ const Musics = () => {
                                 <p className="text-gray-400">Spotifyでの配信アルバム</p>
                             </div>
                         </div>
-                        <iframe
-                            data-testid="embed-iframe"
-                            style={{ borderRadius: '12px' }}
-                            src="https://open.spotify.com/embed/album/4ysGLQ8NTcv7hpS2jlbMkY?utm_source=generator"
-                            width="100%"
-                            height="352"
-                            frameBorder="0"
-                            allowFullScreen={false}
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"
-                        ></iframe>
+                        <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 w-full">
+                            <iframe
+                                data-testid="embed-iframe"
+                                style={{ borderRadius: '12px' }}
+                                src="https://open.spotify.com/embed/track/4ScQAjLHntfzFgmr2C3uvP?utm_source=generator"
+                                width="100%"
+                                height="352"
+                                frameBorder="0"
+                                allowFullScreen={false}
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"
+                            ></iframe>
+                            <iframe
+                                data-testid="embed-iframe"
+                                style={{ borderRadius: '12px' }}
+                                src="https://open.spotify.com/embed/track/0bD4ukllOB63Jn81vQE8T0?utm_source=generator"
+                                width="100%"
+                                height="352"
+                                frameBorder="0"
+                                allowFullScreen={false}
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"
+                            ></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
