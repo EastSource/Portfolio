@@ -48,6 +48,15 @@ const Games = () => {
             downloadUrl: `https://github.com/EastSource/QFlameWorkTrick`,
             githubUrl: `https://github.com/EastSource/QFlameWorkTrick`,
             buttonText: "View on GitHub"
+        },
+        {
+            title: "PandD 2025 Summer",
+            genre: "Game Collection",
+            image: `${import.meta.env.BASE_URL}games/pandd2025summer.webp`,
+            tags: ["Unity", "C#", "2025"],
+            description: "このランチャー内のPuzzleKnightsというゲームの敵の移動経路のシステムを実装しました",
+            downloadUrl: `https://pandd.sakura.ne.jp/index.html`,
+            buttonText: "Visit Site"
         }
     ];
 
@@ -76,6 +85,13 @@ const Games = () => {
                                         </span>
                                     ))}
                                 </div>
+
+                                {/* @ts-ignore - dynamic check */}
+                                {game.description && (
+                                    <p className="text-gray-300 text-sm md:text-base mb-6 leading-relaxed">
+                                        {game.description}
+                                    </p>
+                                )}
 
                                 {/* Link/Button */}
                                 <div className="flex items-center gap-4">
